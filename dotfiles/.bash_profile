@@ -11,6 +11,7 @@ alias ls='ls -GFh'
 export PATH="$HOME/Path:$HOME/Path/git-develop:$PATH"
 source "$HOME/Path/git-completion.bash"
 
+# git branch parser
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
