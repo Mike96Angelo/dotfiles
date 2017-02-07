@@ -17,5 +17,4 @@ parse_git_branch() {
 
 export PS1="\[\033[32m\]\W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
-alias gu="gulp watch --dev --serve"
 alias ip="ifconfig | grep 'inet '"
